@@ -9,6 +9,7 @@ main {
   margin-left: 300px;
   transition: .3s;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
 }
 
 @media (max-width: 1050px) {

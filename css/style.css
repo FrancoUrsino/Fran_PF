@@ -9,6 +9,7 @@ main {
   margin-left: 300px;
   transition: 0.3s;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
 }
 
 @media (max-width: 1050px) {
@@ -222,7 +223,7 @@ main {
   height: 100vh;
   width: 100%;
   display: flex;
-  padding: 70px;
+  margin: 70px;
   position: relative;
   color: rgb(255, 255, 255);
 }
@@ -230,6 +231,9 @@ main {
   display: flex;
   flex-direction: column;
   font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

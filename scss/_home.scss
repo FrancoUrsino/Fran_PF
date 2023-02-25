@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100%;
   display: flex;  
-  padding: 70px;
+  margin: 70px;
   position: relative;
   color: $white;
 
@@ -10,5 +10,8 @@
     display: flex;
     flex-direction: column;
     font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    font-size: 2rem;
   }
 }
