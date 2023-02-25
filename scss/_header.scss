@@ -2,7 +2,7 @@
   width: 300px;
   height: 100vh;
   padding: 15px 30px;
-  background-color: $fColor;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow-y: auto;
   position: fixed;
   top: 0;
@@ -18,7 +18,7 @@
     &--img {
       width: 200px;
       border-radius: 50%;
-      border: 6px solid $tColor;
+      border: 6px solid $fColor;
       object-fit: cover;
     }
 
@@ -49,8 +49,8 @@
 
       &--link {
         color: $white;
-        background-color: $tColor;
-        padding: 5px 8px;
+        background-color: $fColor;
+        padding: 8px 10px;
         border-radius: 50%;
         transition: .5s;
 
@@ -156,5 +156,6 @@
 
   #menuBtn {
     display: block;
+    cursor: pointer;
   }
 }
