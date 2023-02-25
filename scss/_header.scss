@@ -10,6 +10,7 @@
   bottom: 0;
   transition: 0.5s;
   z-index: 1;
+  border-right: 1px solid $fColor;
 
   &__profile {
     text-align: center;
@@ -63,7 +64,6 @@
 
   &__footer {
     text-align: center;
-    // background-color: $tColor;
     width: 300px;
     color: $white;
     font-size: 13px;

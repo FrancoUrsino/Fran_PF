@@ -2,16 +2,54 @@
   height: 100vh;
   width: 100%;
   display: flex;  
-  margin: 70px;
+  margin: 60px;
   position: relative;
   color: $white;
+  overflow: hidden;
 
   &__container{
     display: flex;
     flex-direction: column;
-    font-weight: 700;
+    justify-content: center;
     letter-spacing: -1px;
     margin-bottom: 10px;
-    font-size: 2rem;
+
+    &--title{
+      background: -webkit-linear-gradient(#7b7b7b, #1b2735,#373a4b);
+      background-clip:initial ;
+      -webkit-background-clip: text;
+      
+      -webkit-text-fill-color: transparent;
+      font-weight: 500;
+      font-size: 3rem;
+
+      & i{
+        transform: rotate(45deg);
+        animation: hi 2s linear infinite;
+      }
+
+      & span{
+        font-weight: 300;
+      }
+    }
+
+    &--text{
+      color: $white;
+      font-size: 20px;
+      margin-top: 50px;
+      font-weight: 300;
+    }
+  }
+}
+
+@keyframes hi{
+  0%{
+    transform: rotate(45deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(45deg);
   }
 }

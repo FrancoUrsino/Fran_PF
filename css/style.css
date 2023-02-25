@@ -92,6 +92,7 @@ main {
   bottom: 0;
   transition: 0.5s;
   z-index: 1;
+  border-right: 1px solid rgb(27, 39, 53);
 }
 .header__profile {
   text-align: center;
@@ -223,17 +224,50 @@ main {
   height: 100vh;
   width: 100%;
   display: flex;
-  margin: 70px;
+  margin: 60px;
   position: relative;
   color: rgb(255, 255, 255);
+  overflow: hidden;
 }
 .home__container {
   display: flex;
   flex-direction: column;
-  font-weight: 700;
+  justify-content: center;
   letter-spacing: -1px;
   margin-bottom: 10px;
-  font-size: 2rem;
+}
+.home__container--title {
+  background: -webkit-linear-gradient(#7b7b7b, #1b2735, #373a4b);
+  background-clip: initial;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+  font-size: 3rem;
+}
+.home__container--title i {
+  transform: rotate(45deg);
+  animation: hi 2s linear infinite;
+}
+.home__container--title span {
+  font-weight: 300;
+}
+.home__container--text {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-top: 50px;
+  font-weight: 300;
+}
+
+@keyframes hi {
+  0% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
