@@ -1,30 +1,29 @@
-.about{
+.about {
   width: 100%;
-  height: 100vh;
   display: flex;
   align-items: center;
   // background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 
-  &__container{
+  &__container {
     width: 90%;
     margin: 20px auto;
 
-    &--title{
+    &--title {
       background: -webkit-linear-gradient(#373a4b, #7b7b7b);
-      background-clip:initial ;
-      -webkit-background-clip: text; 
+      background-clip: initial;
+      -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: 500;
       font-size: 3rem;
       margin-bottom: 20px;
     }
 
-    &--text{
+    &--text {
       color: $white;
       text-align: left;
       margin: 20px 0;
 
-      & span{
+      & span {
         color: $sColor;
         font-weight: 400;
         letter-spacing: 2px;
@@ -32,13 +31,13 @@
       }
     }
 
-    &--container{
+    &--container {
       width: 100%;
       margin: 30px auto;
       display: grid;
       grid-template-columns: 350px 1fr;
 
-      &--img{
+      &--img {
         width: 300px;
         height: 450px;
         border: 5px solid $fColor;
@@ -46,52 +45,74 @@
         object-fit: cover;
       }
 
-      &--container{
-        display: flex;
+      &--container {
+        display: grid;
         width: 100%;
-        flex-direction: column;
+        grid-template-rows: 200px 1fr;
 
-        &--title{
-          color: $sColor;
-          font-size: 2rem;
-          text-transform: capitalize;
-          letter-spacing: 2px;
-          font-weight: 400;
-          text-shadow: 0 1px #7b7b7b, #1b2735;
-          margin-bottom: 40px;
-        }
-
-        &--text{
-          color: $white;
-          text-align: left;
-          margin: 20px 0;
-        }
-
-        &--list{
+        &--list {
           list-style: none;
+          display: flex;
+          flex-direction: column;
         }
-        &--item{
+
+        &--item {
           padding-bottom: 15px;
-          text-align: center;
+          text-align: left;
+          color: $white;
+          padding-bottom: 59px;
         }
-        &--text i{
+
+        &--text i {
           color: $sColor;
         }
-        &--text strong{
+
+        &--text strong {
           letter-spacing: 2px;
+        }
+
+        &--container {
+          &--container {
+
+            &--btn {
+              color: $white;
+              font-size: 2rem;
+              text-transform: capitalize;
+              letter-spacing: 2px;
+              font-weight: 400;
+              margin-bottom: 15px;
+              margin-right: 10px;
+              background: $fColor;
+              border-radius: 5px;
+              padding: 5px 10px;
+              cursor: pointer;
+              border: none;
+              transition: 0.6s;
+
+              &:hover{
+                color: $sColor;
+              }
+            }
+
+            &--text {
+              color: $white;
+              text-align: left;
+              margin: 10px 0;
+            }
+          }
         }
       }
     }
   }
 }
 
-@media (max-width: 800px){
-  .about__container{
+@media (max-width: 800px) {
+  .about__container {
     justify-content: center;
   }
-  .about__container--container{
+
+  .about__container--container {
     grid-template-columns: 1fr;
     grid-template-rows: 500px 1fr;
   }
 }
-

@@ -5,6 +5,7 @@
   position: relative;
   color: $white;
   overflow: hidden;
+  padding: 0;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 
   &__container{
@@ -14,7 +15,7 @@
     letter-spacing: -1px;
     margin-bottom: 10px;
     width: 90%;
-    margin: 10px auto;
+    margin: 0 auto;
 
     &--title{
       background: -webkit-linear-gradient(#7b7b7b, #1b2735,#373a4b);
