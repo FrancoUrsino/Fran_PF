@@ -417,6 +417,7 @@ main {
   font-size: 3rem;
   margin-bottom: 20px;
   text-transform: uppercase;
+  text-align: center;
 }
 .formation__container--container {
   display: grid;
@@ -495,6 +496,9 @@ main {
 }
 
 @media (min-width: 800px) {
+  .formation__container--title {
+    text-align: left;
+  }
   .formation__container--container--container {
     width: 500px;
   }
