@@ -7,7 +7,7 @@ const showContainer = () => {
   
   containerContent.innerHTML =
   `
-  <button class="about__container--container--container--container--container--btn" id="softButton">soft Skills</button>
+  <button class="about__container--container--container--container--container--btn active" id="softButton">soft Skills</button>
   <button class="about__container--container--container--container--container--btn" id="hardButton">Hard Skills</button>
   <p class="about__container--container--container--container--container--text" id="softText">Resolución de problemas y Conflictos | Creativo | Gestión de Personas | Liderazgo | Trabajo en Equipo | Tolerancia a Trabajar Bajo Presión | Escucha Activa | Responsabilidad | Proactivo</p>
   <p class="about__container--container--container--container--container--text" id="hardText" style="display: none">estos son los hard skills</p>
@@ -20,7 +20,9 @@ const showContainer = () => {
   const softText = document.querySelector('#softText');
 
 
-  const changeHard = hardButton.addEventListener('click',() =>{softText.style.display = "none", hardText.style.display = "block"})
-  const changeSoft = softButton.addEventListener('click',() =>{hardText.style.display = "none", softText.style.display = "block"})
+  const changeHard = hardButton.addEventListener('click',() =>{softText.style.display = "none", hardText.style.display = "block", hardButton.classList.add('active'), softButton.classList.remove('active')});
+  const changeSoft = softButton.addEventListener('click',() =>{hardText.style.display = "none", softText.style.display = "block", softButton.classList.add('active'), hardButton.classList.remove('active')});
+
+  
 }
 showContainer();
