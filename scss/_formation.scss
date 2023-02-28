@@ -27,23 +27,23 @@
       gap: 2em;
 
       &--container{
-        width: 100%;
-        padding: 0 20px;
-        margin: 20px 0;
-        border-left: 2px solid $sColor;
-        position: relative;
+        // width: 100%;
+        // padding: 0 20px;
+        // margin: 20px 0;
+        // border-left: 2px solid $sColor;
+        // position: relative;
 
-        &::before{
-          content: '';
-          position: absolute;
-          top: 0px;
-          left: -10px;
-          width: 15px;
-          height: 15px;
-          border-radius: 50%;
-          border: 2px solid $sColor;
-          background-color: $fColor;
-        }
+        // &::before{
+        //   content: '';
+        //   position: absolute;
+        //   top: 0px;
+        //   left: -10px;
+        //   width: 15px;
+        //   height: 15px;
+        //   border-radius: 50%;
+        //   border: 2px solid $sColor;
+        //   background-color: $fColor;
+        // }
 
         &--title{
           color: $sColor;
@@ -60,11 +60,23 @@
           &--title{
             color: $white;
             text-transform: uppercase;
-            font-weight: 300;
+            font-weight: 500;
           }
           &--time{
             color: rgba(255, 255, 255, 0.488);
-            font-weight: 300;
+            font-weight: 500;
+          }
+
+          &--list{
+            list-style: none;
+            padding: 5px 0 0 5px;
+            margin-bottom: 20px;
+
+            &--items{
+              padding: 3px 0;
+              color: $white;
+              font-weight: 300;
+            }
           }
         }
       }
@@ -72,6 +84,26 @@
   }
 }
 
+.left, .right{
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  margin: 20px 0;
+  border-left: 2px solid $sColor;
+  position: relative;
+}
+
+.left::before, .right::before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid $sColor;
+  background-color: $fColor;
+}
 
 @media (min-width:800px){
   .formation__container--container--container{
