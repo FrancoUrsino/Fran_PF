@@ -2,7 +2,6 @@
   width: 100%;
   display: flex;
   align-items: center;
-  // background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 
   &__container {
     width: 90%;
@@ -16,6 +15,8 @@
       font-weight: 500;
       font-size: 3rem;
       margin-bottom: 20px;
+      text-transform: uppercase;
+
     }
 
     &--text {
@@ -41,6 +42,7 @@
         width: 300px;
         height: 450px;
         border: 5px solid $fColor;
+        border-radius: 5px;
         box-shadow: 1px 0 5px $sColor;
         object-fit: cover;
       }
@@ -48,7 +50,7 @@
       &--container {
         display: grid;
         width: 100%;
-        grid-template-rows: 200px 1fr;
+        grid-template-rows: 220px 1fr;
 
         &--list {
           list-style: none;
@@ -60,7 +62,7 @@
           padding-bottom: 15px;
           text-align: left;
           color: $white;
-          padding-bottom: 59px;
+          padding-bottom: 52px;
         }
 
         &--text i {
@@ -108,11 +110,30 @@
 
 @media (max-width: 800px) {
   .about__container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    text-align: center;
   }
-
+  
   .about__container--container {
+    justify-content: center;
     grid-template-columns: 1fr;
     grid-template-rows: 500px 1fr;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+
+    &--img{
+      justify-self: center;
+      display: flex;
+    }
+    &--container{
+      justify-content: center;
+      justify-items: center;
+      &--container{
+        justify-content: center;
+      }
+    }
   }
 }

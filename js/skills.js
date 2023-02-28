@@ -9,7 +9,7 @@ const showContainer = () => {
   `
   <button class="about__container--container--container--container--container--btn" id="softButton">soft Skills</button>
   <button class="about__container--container--container--container--container--btn" id="hardButton">Hard Skills</button>
-  <p class="about__container--container--container--container--container--text" id="softText">Resolución de problemas | Creativo | Gestión de Personas | Liderazgo | Trabajo en Equipo | Tolerancia a Trabajar Bajo Presión | Escucha Activa | Responsabilidad</p>
+  <p class="about__container--container--container--container--container--text" id="softText">Resolución de problemas y Conflictos | Creativo | Gestión de Personas | Liderazgo | Trabajo en Equipo | Tolerancia a Trabajar Bajo Presión | Escucha Activa | Responsabilidad | Proactivo</p>
   <p class="about__container--container--container--container--container--text" id="hardText" style="display: none">estos son los hard skills</p>
   `
   container.append(containerContent);
