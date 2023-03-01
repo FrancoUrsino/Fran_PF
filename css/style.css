@@ -366,6 +366,10 @@ main {
   text-align: left;
   margin: 10px 0;
 }
+.about__container--container--container--container--container--text ion-icon {
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.8);
+}
 
 .about__container--container--container--container--container--btn.active {
   color: rgb(0, 167, 142);
@@ -575,7 +579,7 @@ main {
   text-transform: uppercase;
   font-weight: 500;
   text-align: center;
-  top: -20px;
+  top: -5px;
 }
 .portfolio__container--container--container--back--text {
   padding: 10px;
