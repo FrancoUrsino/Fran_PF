@@ -579,6 +579,7 @@ main {
 }
 .portfolio__container--container--container--back--text {
   padding: 10px;
+  font-weight: 300;
 }
 
 @media (min-width: 800px) {
