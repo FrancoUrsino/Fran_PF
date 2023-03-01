@@ -1,0 +1,101 @@
+.portfolio {
+  width: 100%;
+  margin: 20px 0;
+
+  &__container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+    &--title {
+      background: -webkit-linear-gradient(#373a4b, #7b7b7b);
+      background-clip: initial;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 500;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    &--container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+      gap: 2em;
+      justify-items: center;
+
+
+      &--container {
+        width: 350px;
+        height: 200px;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 2s;
+        position: relative;
+
+        &:hover {
+          transform: rotateY(180deg);
+        }
+
+        &--front,
+        &--back {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          backface-visibility: hidden;
+          border-radius: 5px;
+          overflow: hidden;
+          transition: .7s ease-in-out;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          backface-visibility: hidden;
+          transform-style: preserve-3d;
+          object-fit: cover;
+
+        }
+
+        &--front {
+
+          &--img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        &--back {
+          color: $white;
+          background-color: $fColor;
+          transform: rotateY(180deg);
+          text-align: center;
+          border: 1px solid $tColor;
+          box-shadow: 0 1px 5px $sColor;
+
+          &--title {
+            position: relative;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center;
+            top: -20px;
+          }
+          &--text{
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 800px){
+  .portfolio__container--title{
+    text-align: left;
+  }
+  .portfolio__container--container{
+    justify-items: flex-start;
+  }
+}
