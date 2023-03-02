@@ -10,7 +10,7 @@ const showContainer = () => {
   <button class="about__container--container--container--container--container--btn active" id="softButton">soft Skills</button>
   <button class="about__container--container--container--container--container--btn" id="hardButton">Hard Skills</button>
   <p class="about__container--container--container--container--container--text" id="softText">Resolución de problemas y Conflictos | Creativo | Gestión de Personas | Liderazgo | Trabajo en Equipo | Tolerancia a Trabajar Bajo Presión | Escucha Activa | Responsabilidad | Proactivo</p>
-  <p class="about__container--container--container--container--container--text" id="hardText" style="display: none"> <ion-icon name="logo-html5"></ion-icon> <ion-icon name="logo-css3"></ion-icon> <ion-icon name="logo-sass"></ion-icon> <ion-icon name="logo-javascript"></ion-icon> <ion-icon name="logo-nodejs"></ion-icon> <ion-icon name="logo-python"></ion-icon> <ion-icon name="logo-figma"></ion-icon></p>
+  <p class="about__container--container--container--container--container--text" id="hardText" style="display: none"> <ion-icon name="logo-html5"></ion-icon> <ion-icon name="logo-css3"></ion-icon> <i class="fa-brands fa-bootstrap"></i> <ion-icon name="logo-sass"></ion-icon> <ion-icon name="git-branch-outline"></ion-icon> <ion-icon name="logo-javascript"></ion-icon> <ion-icon name="logo-nodejs"></ion-icon> <ion-icon name="logo-npm"></ion-icon> <ion-icon name="logo-python"></ion-icon> <ion-icon name="logo-figma"></ion-icon></p>
   `
   container.append(containerContent);
   

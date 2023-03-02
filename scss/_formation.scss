@@ -24,12 +24,12 @@
 
     &--container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(470px, auto));
+      grid-template-columns: repeat(auto-fit, minmax(360px, auto));
       gap: 2em;
 
       &--container {
-
         &--title {
+          width: 100%;
           color: $sColor;
           letter-spacing: 1.6px;
           font-weight: 500;
@@ -115,6 +115,10 @@
 @media (min-width:800px) {
   .formation__container--title{
     text-align: left;
+  }
+
+  .formation__container--container{
+    grid-template-columns: repeat(auto-fit, minmax(470px, auto));
   }
   .formation__container--container--container {
     width: 500px;

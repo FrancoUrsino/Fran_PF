@@ -50,7 +50,7 @@
       &--container {
         display: grid;
         width: 100%;
-        grid-template-rows: 220px 1fr;
+        grid-template-rows: 250px 1fr;
 
         &--list {
           list-style: none;
@@ -59,10 +59,9 @@
         }
 
         &--item {
-          padding-bottom: 15px;
           text-align: left;
           color: $white;
-          padding-bottom: 52px;
+          padding-bottom: 41px;
         }
 
         &--text i {
@@ -100,7 +99,13 @@
               color: $white;
               text-align: left;
               margin: 10px 0;
-
+              
+              & i{
+                font-size: 50px;
+                position: relative;
+                top: -7px;
+                color: rgba(255, 255, 255, 0.8);
+              }
               & ion-icon{
                 font-size: 50px;
                 color: rgba(255, 255, 255, 0.8);
