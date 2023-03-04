@@ -1,4 +1,81 @@
+.contact{
+  width: 100%;
+  display: grid;
+  margin: 30px 0;
 
+  &__container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 90%;
+    margin: 30px auto;
+
+    &--left{
+      display: flex;
+      flex-direction: column;
+      background-color: $fColor;
+      box-shadow: 0 0 20px $sColor;
+      justify-content: center;
+      align-content: center;
+      gap: 2em;
+      margin: 50px;
+      border-radius: 5px;
+      padding: 30px;
+      border: 1px solid $tColor;
+
+      &--container{
+        padding-bottom: 30px;
+        color: $white;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+
+        &--link{
+          color: $white;
+          border: 2px solid $sColor;
+          padding: 15px 16px;
+          border-radius: 50%;
+          margin-right: 20px;
+          transition: .4s;
+          font-size: 20px;
+          display: flex;
+          align-content: center;
+          justify-content: center;
+          text-decoration: none;
+
+          &:hover{
+            background-color: $sColor;
+          }
+        }
+        &--text{
+          text-align: center;
+          display: flex;
+          align-items: center;
+          font-weight: 700;
+        }
+      }
+    }
+
+    &--right{
+      background-color: $fColor;
+      box-shadow: 0 0 20px $sColor;
+      border-radius: 5px;
+      padding: 30px;
+      border: 1px solid $tColor;
+      margin: 50px;
+      height: 376px;
+
+      &--container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &--input{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
 .btn__neon {
   position: relative;
   display: inline-block;
@@ -88,5 +165,12 @@
     bottom: 100%;
     transition: 1s;
     transition-delay: 0.75s;
+  }
+}
+
+@media (max-width: 1050px){
+  .contact__container{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
   }
 }
