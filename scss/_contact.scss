@@ -1,81 +1,121 @@
-.contact{
+.contact {
   width: 100%;
   display: grid;
-  margin: 30px 0;
+  margin: 50px 0 20px 0;
+  justify-items: center;
+  text-align: center;
 
-  &__container{
-    display: grid;
-    grid-template-columns: 40% 60%;
-    width: 90%;
+  &__container {
+    width: 100%;
     margin: 30px auto;
 
-    &--left{
-      display: flex;
-      flex-direction: column;
-      background-color: $fColor;
-      box-shadow: 0 0 20px $sColor;
-      justify-content: center;
-      align-content: center;
-      gap: 2em;
-      margin: 50px;
-      border-radius: 5px;
-      padding: 30px;
-      border: 1px solid $tColor;
-
-      &--container{
-        padding-bottom: 30px;
-        color: $white;
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-
-        &--link{
-          color: $white;
-          border: 2px solid $sColor;
-          padding: 15px 16px;
-          border-radius: 50%;
-          margin-right: 20px;
-          transition: .4s;
-          font-size: 20px;
-          display: flex;
-          align-content: center;
-          justify-content: center;
-          text-decoration: none;
-
-          &:hover{
-            background-color: $sColor;
-          }
-        }
-        &--text{
-          text-align: center;
-          display: flex;
-          align-items: center;
-          font-weight: 700;
-        }
-      }
+    &--title {
+      background: -webkit-linear-gradient(#373a4b, #7b7b7b);
+      background-clip: initial;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 500;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
     }
 
-    &--right{
-      background-color: $fColor;
-      box-shadow: 0 0 20px $sColor;
-      border-radius: 5px;
-      padding: 30px;
-      border: 1px solid $tColor;
-      margin: 50px;
-      height: 376px;
+    &--container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      gap: 1.5em;
+      justify-content: center;
+      width: 90%;
+      margin: 50px auto;
 
-      &--container{
+      &--left {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        background-color: $fColor;
+        box-shadow: 0 0 20px $sColor;
+        justify-content: center;
+        align-content: center;
+        gap: 2em;
+        // margin: 50px 50px 50px 0;
+        border-radius: 5px;
+        padding: 30px;
+        border: 1px solid $tColor;
 
-        &--input{
-          font-size: 15px;
+        &--container {
+          padding-bottom: 30px;
+          color: $white;
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+
+          &--link {
+            width: 25px;
+            height: 25px;
+            color: $white;
+            border: 2px solid $sColor;
+            padding: 15px 16px;
+            border-radius: 50%;
+            margin-right: 20px;
+            transition: .4s;
+            font-size: 20px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            text-decoration: none;
+
+            & i {
+              position: relative;
+              top: -10px;
+            }
+
+            &:hover {
+              background-color: $sColor;
+            }
+          }
+
+          &--text {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+          }
+        }
+      }
+
+      &--right {
+        background-color: $fColor;
+        box-shadow: 0 0 20px $sColor;
+        border-radius: 5px;
+        padding: 30px;
+        border: 1px solid $tColor;
+        // margin: 50px 50px 50px 0;
+        height: 376px;
+
+        &--container {
+          display: flex;
+          flex-direction: column;
+
+          &--input {
+            font-size: 15pxpx;
+            margin-bottom: 20px;
+            padding: 5px;
+
+            &:focus {
+              border: 2px solid $sColor;
+            }
+          }
+
+          &--label{
+            color: $white;
+            padding-bottom: 5px;
+          }
         }
       }
     }
   }
 }
+
 .btn__neon {
   position: relative;
   display: inline-block;
@@ -102,7 +142,7 @@
 
   &:hover {
     background: $sColor;
-    box-shadow: 0 0 10px $fColor, 0 0 40px $fColor, 0 0 80px $fColor;
+    box-shadow: 0 0 6px $tColor, 0 0 20px $tColor, 0 0 40px $tColor;
     transition-delay: 1.25s;
     color: $white;
   }
@@ -117,7 +157,7 @@
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, $fColor);
+    background: linear-gradient(90deg, transparent, $tColor);
   }
 
   &:hover #span1 {
@@ -130,7 +170,7 @@
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, $fColor);
+    background: linear-gradient(180deg, transparent, $tColor);
   }
 
   &:hover #span2 {
@@ -144,7 +184,7 @@
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, $fColor);
+    background: linear-gradient(270deg, transparent, $tColor);
   }
 
   &:hover #span3 {
@@ -158,7 +198,7 @@
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, $fColor);
+    background: linear-gradient(360deg, transparent, $tColor);
   }
 
   &:hover #span4 {
@@ -168,9 +208,22 @@
   }
 }
 
-@media (max-width: 1050px){
-  .contact__container{
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1fr);
+@media (min-width: 700px) {
+  .contact__container--title{
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contact__container--container {
+    width: 90%;
+    margin: 50px auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+  }
+}
+
+@media (min-width: 1300px) {
+  .contact__container--container{
+    grid-template-columns: 40% 58%;
   }
 }

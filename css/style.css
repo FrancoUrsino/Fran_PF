@@ -293,7 +293,7 @@ main {
   -webkit-text-fill-color: transparent;
   font-weight: 500;
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   text-transform: uppercase;
 }
 .about__container--text {
@@ -424,7 +424,7 @@ main {
   -webkit-text-fill-color: transparent;
   font-weight: 500;
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -536,7 +536,7 @@ main {
   -webkit-text-fill-color: transparent;
   font-weight: 500;
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -624,15 +624,34 @@ main {
 .contact {
   width: 100%;
   display: grid;
-  margin: 30px 0;
+  margin: 50px 0 20px 0;
+  justify-items: center;
+  text-align: center;
 }
 .contact__container {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  width: 90%;
+  width: 100%;
   margin: 30px auto;
 }
-.contact__container--left {
+.contact__container--title {
+  background: -webkit-linear-gradient(#373a4b, #7b7b7b);
+  background-clip: initial;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.contact__container--container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5em;
+  justify-content: center;
+  width: 90%;
+  margin: 50px auto;
+}
+.contact__container--container--left {
   display: flex;
   flex-direction: column;
   background-color: rgb(27, 39, 53);
@@ -640,19 +659,20 @@ main {
   justify-content: center;
   align-content: center;
   gap: 2em;
-  margin: 50px;
   border-radius: 5px;
   padding: 30px;
   border: 1px solid rgb(82, 82, 82);
 }
-.contact__container--left--container {
+.contact__container--container--left--container {
   padding-bottom: 30px;
   color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
   text-align: center;
 }
-.contact__container--left--container--link {
+.contact__container--container--left--container--link {
+  width: 25px;
+  height: 25px;
   color: rgb(255, 255, 255);
   border: 2px solid rgb(0, 167, 142);
   padding: 15px 16px;
@@ -665,31 +685,42 @@ main {
   justify-content: center;
   text-decoration: none;
 }
-.contact__container--left--container--link:hover {
+.contact__container--container--left--container--link i {
+  position: relative;
+  top: -10px;
+}
+.contact__container--container--left--container--link:hover {
   background-color: rgb(0, 167, 142);
 }
-.contact__container--left--container--text {
+.contact__container--container--left--container--text {
   text-align: center;
   display: flex;
   align-items: center;
   font-weight: 700;
 }
-.contact__container--right {
+.contact__container--container--right {
   background-color: rgb(27, 39, 53);
   box-shadow: 0 0 20px rgb(0, 167, 142);
   border-radius: 5px;
   padding: 30px;
   border: 1px solid rgb(82, 82, 82);
-  margin: 50px;
   height: 376px;
 }
-.contact__container--right--container {
+.contact__container--container--right--container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
-.contact__container--right--container--input {
-  font-size: 15px;
+.contact__container--container--right--container--input {
+  font-size: 15pxpx;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+.contact__container--container--right--container--input:focus {
+  border: 2px solid rgb(0, 167, 142);
+}
+.contact__container--container--right--container--label {
+  color: rgb(255, 255, 255);
+  padding-bottom: 5px;
 }
 
 .btn__neon {
@@ -715,7 +746,7 @@ main {
 }
 .btn__neon:hover {
   background: rgb(0, 167, 142);
-  box-shadow: 0 0 10px rgb(27, 39, 53), 0 0 40px rgb(27, 39, 53), 0 0 80px rgb(27, 39, 53);
+  box-shadow: 0 0 6px rgb(82, 82, 82), 0 0 20px rgb(82, 82, 82), 0 0 40px rgb(82, 82, 82);
   transition-delay: 1.25s;
   color: rgb(255, 255, 255);
 }
@@ -728,7 +759,7 @@ main {
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, rgb(27, 39, 53));
+  background: linear-gradient(90deg, transparent, rgb(82, 82, 82));
 }
 .btn__neon:hover #span1 {
   left: 100%;
@@ -739,7 +770,7 @@ main {
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, rgb(27, 39, 53));
+  background: linear-gradient(180deg, transparent, rgb(82, 82, 82));
 }
 .btn__neon:hover #span2 {
   top: 100%;
@@ -751,7 +782,7 @@ main {
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, rgb(27, 39, 53));
+  background: linear-gradient(270deg, transparent, rgb(82, 82, 82));
 }
 .btn__neon:hover #span3 {
   right: 100%;
@@ -763,7 +794,7 @@ main {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, rgb(27, 39, 53));
+  background: linear-gradient(360deg, transparent, rgb(82, 82, 82));
 }
 .btn__neon:hover #span4 {
   bottom: 100%;
@@ -771,10 +802,22 @@ main {
   transition-delay: 0.75s;
 }
 
-@media (max-width: 1050px) {
-  .contact__container {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1fr);
+@media (min-width: 700px) {
+  .contact__container--title {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contact__container--container {
+    width: 90%;
+    margin: 50px auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+  }
+}
+@media (min-width: 1300px) {
+  .contact__container--container {
+    grid-template-columns: 40% 58%;
   }
 }
 
