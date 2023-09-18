@@ -25,14 +25,14 @@
 
     &--container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+      grid-template-columns: repeat(auto-fit, minmax(400px, auto));
       gap: 2em;
       justify-items: center;
 
 
       &--container {
-        width: 350px;
-        height: 200px;
+        width: 400px;
+        height: 250px;
         position: relative;
         transform-style: preserve-3d;
         transition: transform 2s;
@@ -119,6 +119,11 @@
 
   .portfolio__container--container {
     justify-items: flex-start;
-    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(550px, auto));
+
+    &--container{
+      width: 400px;
+      height: 250px;
+    }
   }
 }

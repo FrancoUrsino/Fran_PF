@@ -49,9 +49,9 @@
         <li class="nav__list--items"><a href="#formation" class="nav__list--link"><i
               class="fa-solid fa-graduation-cap"></i>
             Formación</a></li>
-        <li class="nav__list--items"><a href="" class="nav__list--link"><i class="fa-solid fa-server"></i>
-            Tecnologías</a></li>
-        <li class="nav__list--items"><a href="" class="nav__list--link"><i class="fa-solid fa-envelope"></i>
+        <li class="nav__list--items"><a href="#projects" class="nav__list--link"><i class="fa-solid fa-server"></i>
+            Proyectos</a></li>
+        <li class="nav__list--items"><a href="#contactUs" class="nav__list--link"><i class="fa-solid fa-envelope"></i>
             Contactame</a></li>
       </ul>
     </nav>
@@ -88,7 +88,7 @@
         </p>
         <div class="about__container--container">
           <img src="img/about.jpg" alt="Frase en computadora" class="about__container--container--img">
-          <div class="about__container--container--container">
+          <address class="about__container--container--container">
             <div class="about__container--container--container--container"> <!-- SKILLS.JS -->
             </div>
             <ul class="about__container--container--container--list">
@@ -113,7 +113,7 @@
                 </p>
               </li>
             </ul>
-          </div>
+          </address>
         </div>
       </div>
     </section>
@@ -122,12 +122,18 @@
       <div class="formation__container">
         <h2 class="formation__container--title">Formación</h2>
         <div class="formation__container--container">
+          <!-- LEFT -->
           <div class="formation__container--container--container left">
             <h3 class="formation__container--container--container--title">Educación</h3>
             <div class="formation__container--container--container--container">
               <h4 class="formation__container--container--container--container--title">Administración de empresas | UADE
               </h4>
               <p class="formation__container--container--container--container--time">2021 - actualidad</p>
+            </div>
+            <div class="formation__container--container--container--container">
+              <h4 class="formation__container--container--container--container--title">Curso ReactJs | Coderhouse
+              </h4>
+              <p class="formation__container--container--container--container--time">2023 - 2023</p>
             </div>
             <div class="formation__container--container--container--container">
               <h4 class="formation__container--container--container--container--title">Curso JavaScript | Coderhouse
@@ -145,13 +151,14 @@
               <p class="formation__container--container--container--container--time">2017 - 2020</p>
             </div>
           </div>
+          <!-- RIGHT -->
           <div class="formation__container--container--container right">
             <h3 class="formation__container--container--container--title">Experiencia Laboral</h3>
             <div class="formation__container--container--container--container">
               <div class="formation__container--container--container--container--info">
                 <h4 class="formation__container--container--container--container--title">Santander Rio (entidad
                   bancaria) | empleado </h4>
-                <p class="formation__container--container--container--container--time"> noviembre 2022 - marzo 2023 |
+                <p class="formation__container--container--container--container--time"> noviembre 2022 - actualidad |
                   Retiro, CABA</p>
                 <ul class="formation__container--container--container--container--list">
                   <li class="formation__container--container--container--container--list--items">Venta telefónica</li>
@@ -161,6 +168,8 @@
                     cliente</li>
                   <li class="formation__container--container--container--container--list--items">Asesoramiento y
                     orientación del cliente</li>
+                  <li class="formation__container--container--container--container--list--items">Adquisición de conocimientos de sistema SalesForce</li>
+                  <li class="formation__container--container--container--container--list--items">Capacitación de operadores hacia sistemas</li>
                 </ul>
               </div>
               <div class="formation__container--container--container--container--info">
@@ -249,12 +258,12 @@
       </div>
     </section>
     <!-- PORTFOLIO SECTION -->
-    <section class="portfolio">
+    <section class="portfolio" id="projects">
       <div class="portfolio__container">
         <h2 class="portfolio__container--title">Proyectos</h2>
         <div class="portfolio__container--container">
           <!-- PROJECT -->
-          <div class="portfolio__container--container--container">
+          <article class="portfolio__container--container--container">
             <div class="portfolio__container--container--container--front">
               <img src="img/eficap.png" class="portfolio__container--container--container--front--img" alt="Eficap">
             </div>
@@ -268,9 +277,24 @@
                 class="portfolio__container--container--container--back--link"><i
                   class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
-          </div>
+          </article>
           <!-- PROJECT -->
-          <div class="portfolio__container--container--container">
+          <article class="portfolio__container--container--container">
+            <div class="portfolio__container--container--container--front">
+              <img src="img/ExtremeShop.png" class="portfolio__container--container--container--front--img"
+                alt="Extreme Combat Shop">
+            </div>
+            <div class="portfolio__container--container--container--back">
+              <h2 class="portfolio__container--container--container--back--title">Extreme Combat Shop</h2>
+              <p class="portfolio__container--container--container--back--text">Este ecommerce fue realizado como proyecto en el curso de ReactJs. Las
+                tecnologías utilizadas fueron: HTML5,REACTJS, TAILWIND, JAVASCRIPT, SASS, NODE JS, FIREBASE</p>
+              <a href="https://github.com/FrancoUrsino/ProyectoFinal_Ursino"
+                class="portfolio__container--container--container--back--link"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
+          <!-- PROJECT -->
+          <article class="portfolio__container--container--container">
             <div class="portfolio__container--container--container--front">
               <img src="img/discoverArg.png" class="portfolio__container--container--container--front--img"
                 alt="Discover Arg">
@@ -284,9 +308,9 @@
                 class="portfolio__container--container--container--back--link"><i
                   class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
-          </div>
+          </article>
           <!-- PROJECT -->
-          <div class="portfolio__container--container--container">
+          <article class="portfolio__container--container--container">
             <div class="portfolio__container--container--container--front">
               <img src="img/PlanesenPareja.png" class="portfolio__container--container--container--front--img"
                 alt="Planes en Pareja">
@@ -300,16 +324,16 @@
                 class="portfolio__container--container--container--back--link"><i
                   class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
     <!-- CONTACT SECTION -->
-    <section class="contact">
+    <section class="contact" id="contactUs">
       <div class="contact__container">
         <h2 class="contact__container--title">CONTACTAME</h2>
         <div class="contact__container--container">
-          <div class="contact__container--container--left">
+          <address class="contact__container--container--left">
             <div class="contact__container--container--left--container">
               <a href="#" class="contact__container--container--left--container--link"><i class="fa-solid fa-mobile-screen-button"></i></a>
               <p class="contact__container--container--left--container--text">Teléfono: +54 9 1138460917</p>
@@ -322,7 +346,7 @@
               <a href="#" class="contact__container--container--left--container--link"><i class="fa-solid fa-location-dot"></i></a>
               <p class="contact__container--container--left--container--text">Localidad: CABA - Argentina</p>
             </div>
-          </div>
+          </address>
           <div class="contact__container--container--right">
             <form action="" class="contact__container--container--right--container">
               <label for="name" class="contact__container--container--right--container--label">Nombre</label>
