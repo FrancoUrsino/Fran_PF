@@ -104,9 +104,6 @@ main {
   border-bottom: 1px solid rgb(82, 82, 82);
   text-transform: uppercase;
 }
-.nav__list .active {
-  color: rgb(0, 167, 142);
-}
 .nav__list--link {
   text-decoration: none;
   color: rgb(211, 211, 211);
